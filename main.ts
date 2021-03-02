@@ -3,7 +3,8 @@ input.onButtonPressed(Button.A, function () {
     bits = bits - 1
     Numero = Numero + 2 ** bits
     if (bits == 0) {
-        basic.showString("" + (Numero))
+        basic.showArrow(ArrowNames.East)
+        // Se lo enviamos al decodificador
         radio.sendNumber(Numero)
         bits = NumeroBits
         Numero = 0
@@ -13,7 +14,8 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     bits = bits - 1
     if (bits == 0) {
-        basic.showNumber(Numero)
+        basic.showArrow(ArrowNames.East)
+        // Se lo enviamos al decodificador
         radio.sendNumber(Numero)
         bits = NumeroBits
         Numero = 0
