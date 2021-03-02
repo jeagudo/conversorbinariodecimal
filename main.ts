@@ -30,5 +30,11 @@ bits = NumeroBits
 // Número decimal a calcular
 Numero = 0
 basic.forever(function () {
-	
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
